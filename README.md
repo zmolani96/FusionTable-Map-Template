@@ -1,4 +1,4 @@
-http://zmolani96.github.io/FusionTable-Map-Template
+http://zmolani96.github.io/Houston-Area_Physicians
 
 # Fusion Table Searchable Map Template
 You want to put your data on a searchable, filterable map. This is a free, open source template to help you do it.
