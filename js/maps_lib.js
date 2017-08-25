@@ -163,7 +163,16 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
-   
+   var type_column = "'County'";
+var tempWhereClause = [];
+if ( $("#cbType1").is(':checked')) tempWhereClause.push("Brazoria");
+if ( $("#cbType2").is(':checked')) tempWhereClause.push("Chambers");
+if ( $("#cbType3").is(':checked')) tempWhereClause.push("Fort Bend");
+if ( $("#cbType4").is(':checked')) tempWhereClause.push("Galveston");
+if ( $("#cbType4").is(':checked')) tempWhereClause.push("Harris");
+if ( $("#cbType4").is(':checked')) tempWhereClause.push("Liberty");
+if ( $("#cbType4").is(':checked')) tempWhereClause.push("Montgomery");
+self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {
