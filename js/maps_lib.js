@@ -169,9 +169,9 @@ if ( $("#cbType1").is(':checked')) tempWhereClause.push("Brazoria");
 if ( $("#cbType2").is(':checked')) tempWhereClause.push("Chambers");
 if ( $("#cbType3").is(':checked')) tempWhereClause.push("Fort Bend");
 if ( $("#cbType4").is(':checked')) tempWhereClause.push("Galveston");
-if ( $("#cbType4").is(':checked')) tempWhereClause.push("Harris");
-if ( $("#cbType4").is(':checked')) tempWhereClause.push("Liberty");
-if ( $("#cbType4").is(':checked')) tempWhereClause.push("Montgomery");
+if ( $("#cbType5").is(':checked')) tempWhereClause.push("Harris");
+if ( $("#cbType6").is(':checked')) tempWhereClause.push("Liberty");
+if ( $("#cbType7").is(':checked')) tempWhereClause.push("Montgomery");
 self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
         //-----end of custom filters-----
 
