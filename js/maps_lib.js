@@ -163,60 +163,7 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
-        <h4>
-  County
-</h4>
-<ul class='inputs-list unstyled'>
-  <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType1' />
-      <span class='filter-box filter-blue'></span>
-      Brazoria
-    </label>
-  </li>
-  <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType2' />
-      <span class='filter-box filter-green'></span>
-      Chambers
-    </label>
-  </li>
-  <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType3' />
-      <span class='filter-box filter-red'></span>
-      Fort Bend
-    </label>
-  </li>
-        <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType3' />
-      <span class='filter-box filter-red'></span>
-      Galveston
-    </label>
-  </li>
-        <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType3' />
-      <span class='filter-box filter-red'></span>
-      Harris
-    </label>
-  </li>
-        <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType3' />
-      <span class='filter-box filter-red'></span>
-      Liberty
-    </label>
-  </li>
-        <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType3' />
-      <span class='filter-box filter-red'></span>
-      Montgomery
-    </label>
-  </li>
-</ul>
+   
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {
